@@ -11,16 +11,28 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: '#0369A1',
-                secondary: '#6A9FBE',
-                tertiary: '#D1D5DB',
-                accent: '#F9A826',
-                dark: '#1F2937',
-                light: '#F5F7FA',
-                white: '#FFFFFF',
-                info: '#2094F3',
-                success: '#009485',
-                warning: '#ff0000'
+                primary: '#05A3F7',
+                primary_light: '#05BDEF',
+                primary_dark: '#035A89',
+                secondary: '#2693CD',
+                secondary_light: '#30B7FF',
+                secondary_dark: '#12435E',
+                tertiary: '#397EA2',
+                tertiary_light: '#59C5FF',
+                tertiary_dark: '#122935',
+                accent: '#0556F7',
+                accent_light: '#0553EF',
+                accent_dark: '#032F89',
+                info: '#05EFF7',
+                info_light: '#05E7EF',
+                info_dark: '#038489',
+                background: '#111111',
+                white: '#EAEAEA',
+                white_light: '#F9F9F9',
+                dark: '#272727',
+                border_light: '#6C6C6C',
+                warning: '#F7A305',
+                validate: '#00b97b'
             }
         }
     },

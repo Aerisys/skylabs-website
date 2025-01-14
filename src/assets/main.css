@@ -1,6 +1,25 @@
 @import './base.css';
 
 body{
-	background: #F5F7FA;
+	background: #000000;
 }
 
+section{
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+h1{
+	color: #EAEAEA;
+	font-family: Roboto, sans-serif;
+}
+
+h2{
+	color: #EAEAEA;
+	font-family: Roboto, sans-serif;
+}
+
+section, p{
+	color: #374151;
+	font-family: Montserrat, sans-serif;
+}

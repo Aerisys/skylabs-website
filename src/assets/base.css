@@ -136,3 +136,6 @@ body{
 	height: 100%;
 }
 
+.border-radius{
+	border-radius: 8px;
+}
