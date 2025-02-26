@@ -1,9 +1,11 @@
-<script setup>
-import Header from './components/main/header.vue';
-import HomeView from '@/views/HomeView.vue';
+<script setup lang="ts">
+import { RouterView } from 'vue-router'
+import TheNavbar from './components/TheNavbar.vue'
 </script>
 
 <template>
-    <Header />
-    <router-view />
+  <div class="min-h-screen bg-primary-600">
+    <TheNavbar />
+    <RouterView />
+  </div>
 </template>
