@@ -40,7 +40,7 @@ onUnmounted(() => {
           <router-link to="/project" class="text-primary-100 hover:text-primary-200 transition-colors">Le Projet</router-link>
           <router-link to="/mobile" class="text-primary-100 hover:text-primary-200 transition-colors">App Mobile</router-link>
           <router-link to="/docs" class="text-primary-100 hover:text-primary-200 transition-colors">Documentation</router-link>
-          <router-link to="/management" class="text-primary-100 hover:text-primary-200 transition-colors">Gestion</router-link>
+          <router-link to="/management" class="text-primary-100 hover:text-primary-200 transition-colors">Processus</router-link>
           <router-link to="/team" class="text-primary-100 hover:text-primary-200 transition-colors">Équipe</router-link>
         </div>
 
@@ -62,7 +62,7 @@ onUnmounted(() => {
         <router-link to="/project" class="block px-3 py-2 text-primary-100 hover:text-primary-200">Le Projet</router-link>
         <router-link to="/mobile" class="block px-3 py-2 text-primary-100 hover:text-primary-200">App Mobile</router-link>
         <router-link to="/docs" class="block px-3 py-2 text-primary-100 hover:text-primary-200">Documentation</router-link>
-        <router-link to="/management" class="block px-3 py-2 text-primary-100 hover:text-primary-200">Gestion</router-link>
+        <router-link to="/management" class="block px-3 py-2 text-primary-100 hover:text-primary-200">Processus</router-link>
         <router-link to="/team" class="block px-3 py-2 text-primary-100 hover:text-primary-200">Équipe</router-link>
       </div>
     </div>
