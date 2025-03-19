@@ -30,6 +30,7 @@
           </div>
         </div>
 
+<<<<<<< HEAD
         <!-- Galerie Vidéo -->
         <div class="bg-primary-500/50 rounded-lg p-8">
           <h2 class="text-2xl font-semibold text-primary-200 mb-6">Galerie Vidéo</h2>
@@ -47,6 +48,8 @@
             </div>
           </div>
         </div>
+=======
+>>>>>>> afd82a4 (fill home & project & mobile + fix head)
         <!-- Technologies -->
         <div class="bg-primary-500/50 rounded-lg p-8">
           <h2 class="text-2xl font-semibold text-primary-200 mb-4">Technologies</h2>
@@ -61,26 +64,38 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+<<<<<<< HEAD
 import { CDN_URL } from "../config.ts";
 
 const galerie = [
   {
     url: CDN_URL + "images/drone/joystick-test.jpg",
+=======
+const galerie = [
+  {
+    url: "https://cdn.discordapp.com/attachments/1351859383461478533/1351859440956997642/IMG_20250226_152948.jpg?ex=67dbe8b7&is=67da9737&hm=278d18732ea803a125b575ac2c78409650ce9a49afa2047744318ee0b708dc08&",
+>>>>>>> afd82a4 (fill home & project & mobile + fix head)
     alt: "Test du code des joysticks",
     description: "Test du code des joysticks de la radiocommande."
   },
   {
+<<<<<<< HEAD
     url: CDN_URL + "images/drone/drone-montage.jpg",
+=======
+    url: "https://cdn.discordapp.com/attachments/1351859383461478533/1351859626043375657/20250226_145633.jpg?ex=67dbe8e3&is=67da9763&hm=45ab98d4b1b820a831d7c20a68d49633d58d4876afa0c71b58f07421d630c14e&",
+>>>>>>> afd82a4 (fill home & project & mobile + fix head)
     alt: "Premier prototype du drone",
     description: "Premier montage complet du drone avec les hélices, les moteurs, la batterie et les cartes."
   },
   {
+<<<<<<< HEAD
     url: CDN_URL + "images/members/team.jpg",
     alt: "Une équipe de kassos",
     description: "Une équipe de kassos qui travaille sur le projet Skylab."
@@ -100,6 +115,11 @@ const videos = [
   {
     url: CDN_URL + "videos/crash-1.mp4",
     description: "Test des moteurs et de la réactivité du drone."
+=======
+    url: "https://media.discordapp.net/attachments/1296865465058201643/1329042407697940601/PXL_20250115_105830838.MP.jpg?ex=67db4c72&is=67d9faf2&hm=f41df4ae8b1b460161e169f672b5e45a75d506f444289cfdebcf3ffaa7fc43a1&=&format=webp&width=1066&height=800",
+    alt: "Une équipe de kassos",
+    description: "Une équipe de kassos qui travaille sur le projet Skylab."
+>>>>>>> afd82a4 (fill home & project & mobile + fix head)
   }
 ];
 
@@ -125,6 +145,7 @@ const technologies = [
     outils: ["Python"]
   }
 ];
+<<<<<<< HEAD
 
 const downloadVideo = (url: string, filename: string) => {
   fetch(url)
@@ -139,4 +160,6 @@ const downloadVideo = (url: string, filename: string) => {
       })
       .catch(error => console.error("Erreur lors du téléchargement :", error));
 };
+=======
+>>>>>>> afd82a4 (fill home & project & mobile + fix head)
 </script>
