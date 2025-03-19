@@ -119,7 +119,11 @@ const videos = [
     url: "https://media.discordapp.net/attachments/1296865465058201643/1329042407697940601/PXL_20250115_105830838.MP.jpg?ex=67db4c72&is=67d9faf2&hm=f41df4ae8b1b460161e169f672b5e45a75d506f444289cfdebcf3ffaa7fc43a1&=&format=webp&width=1066&height=800",
     alt: "Une équipe de kassos",
     description: "Une équipe de kassos qui travaille sur le projet Skylab."
->>>>>>> afd82a4 (fill home & project & mobile + fix head)
+  },
+  {
+    url: "https://cdn.discordapp.com/attachments/1344299782851530802/1351899118523383978/image.png?ex=67dc0daa&is=67dabc2a&hm=a04f914a18346db40f9503fd40d3a8222c91671d09ea5e281e556e3bd530d9ca&",
+    alt: "Conception 3D",
+    description: "Conception 3D du drone."
   }
 ];
 
