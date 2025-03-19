@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import MemberCard from "../components/MemberCard.vue";
 
 interface SocialMedia {
   platform: string;
@@ -14,66 +15,218 @@ interface TeamMember {
   age: number;
   specialty: string;
   contributions: string[];
+  presentation: string;
   photo: string;
   socials: SocialMedia[];
 }
 
-const teamMembers = ref<TeamMember[]>([
+const projectManager = ref<TeamMember[]>([
   {
     id: 1,
-    name: "Doe",
-    firstName: "John",
-    age: 22,
-    specialty: "Frontend Developer",
+    name: "Barbet",
+    firstName: "Sacha",
+    age: 21,
+    specialty: "Développeur logiciel, mobile & IOT",
     contributions: [
-      "Développement de l'interface utilisateur",
-      "Intégration des animations",
-      "Design système"
+      "Chef de projet",
+      "Développeur",
     ],
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    presentation: "Je suis passioné d'informatique, d'électrique et d'escalade.",
+    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1351857300159074304/1696676661920.jpeg?ex=67dbe6b8&is=67da9538&hm=692b56091767e70eadb067772652a39ed403caaf7449d73731ab64d9b4e1faba&",
     socials: [
       {
         platform: "LinkedIn",
-        url: "https://linkedin.com/in/johndoe",
+        url: "https://www.linkedin.com/in/sacha-barbet/",
         icon: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
-      },
-      {
-        platform: "GitHub",
-        url: "https://github.com/johndoe",
-        icon: "M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.022A9.606 9.606 0 0112 6.82c.85.004 1.705.115 2.504.337 1.909-1.29 2.747-1.022 2.747-1.022.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
-      },
-      {
-        platform: "Twitter",
-        url: "https://twitter.com/johndoe",
-        icon: "M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
       }
     ]
   },
   {
     id: 2,
-    name: "Smith",
-    firstName: "Jane",
+    name: "Pidoux",
+    firstName: "Gaël",
     age: 23,
-    specialty: "Backend Developer",
+    specialty: "Développeur logiciel, mobile & IOT",
     contributions: [
-      "Architecture du système",
-      "API REST",
-      "Base de données"
+      "Chef de projet",
+      "Développeur",
     ],
-    photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    presentation: "je suis passioné d'informatique, d'electronique et de sport.",
+    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1329002152202342450/PXL_20250115_0815407992.jpg?ex=67dbcfb4&is=67da7e34&hm=b7d5698d5222c589d5e2815c56c598b74603dc90051a5855f6a91d336059bd59&",
     socials: [
       {
         platform: "LinkedIn",
-        url: "https://linkedin.com/in/janesmith",
+        url: "https://www.linkedin.com/in/gaël-pidoux/",
+        icon: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+      }
+    ]
+  }
+]);
+
+const iotTeam = ref<TeamMember[]>([
+  {
+    id: 1,
+    name: "François",
+    firstName: "Loan",
+    age: 21,
+    specialty: "Développeur logiciel, mobile & IOT",
+    contributions: [
+      "Développeur mobile",
+      "contribution sur la manette du drone",
+    ],
+    presentation: "Développeur polyvalent, j’aime créer, optimiser et donner vie à des projets sur tous les fronts. J'aime bien les soirées aussi 🙂.",
+    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1351865447816888340/ynov-identite.jpg?ex=67dbee4f&is=67da9ccf&hm=d204566c2e2005563ee72d4d753221de5e67b5011f863416306192469df69645&",
+    socials: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/loanfrancois/",
         icon: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
       },
       {
         platform: "GitHub",
-        url: "https://github.com/janesmith",
+        url: "https://github.com/LoanF",
         icon: "M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.022A9.606 9.606 0 0112 6.82c.85.004 1.705.115 2.504.337 1.909-1.29 2.747-1.022 2.747-1.022.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+      },
+    ]
+  },
+  {
+    id: 2,
+    name: "Coeur",
+    firstName: "Maxence",
+    age: 21,
+    specialty: "Développeur logiciel, mobile & IOT",
+    contributions: [
+      "Developpeur sur le drone",
+      "Développeur sur la manette",
+    ],
+    presentation: "Je suis passionné de sport, d'informatique et de bière 🍻.",
+    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1328118552724770888/Screenshot_20221222_211455.jpg?ex=67db3bca&is=67d9ea4a&hm=5c1437409248d2686a089837bf25d909d6237c4757ebc6bf394ed3ae1967adb9&",
+    socials: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/maxence-coeur/",
+        icon: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+      },
+      {
+        platform: "GitHub",
+        url: "https://github.com/MAXCOEUR",
+        icon: "M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.022A9.606 9.606 0 0112 6.82c.85.004 1.705.115 2.504.337 1.909-1.29 2.747-1.022 2.747-1.022.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+      },
+    ]
+  },
+  {
+    id: 3,
+    name: "Abo-Alrub",
+    firstName: "Jamil",
+    age: 26,
+    specialty: "Data scientist",
+    contributions: [
+      "Computer Vision",
+      "Traitement d'image",
+      "ML"
+    ],
+    presentation: "Je suis passionné de mathématiques, de machine learning et de computer vision.",
+    photo: "https://cdn.discordapp.com/attachments/1344299782851530802/1351900442199719936/438799072_7327703210659174_8210856045386759170_n.jpg?ex=67dc0ee6&is=67dabd66&hm=506b666894a399f6a4e9b5da0ce6c0ba37f38a2c026ecff159a05d05c830df8a&",
+    socials: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/jamil-aboalrub/",
+        icon: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
       }
     ]
-  }
+  },
+  {
+    id: 4,
+    name: "Richard de Vesvrotte",
+    firstName: "Amaury",
+    age: 25,
+    specialty: "Développeur logiciel, mobile & IOT",
+    contributions: [
+      "Développeur sur la manette",
+      "Développeur des communications"
+    ],
+    presentation: "Je suis passionné d'informatique et de sport.",
+    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1328109818736803840/IMG_20240928_212634.jpg?ex=67db33a7&is=67d9e227&hm=9604008d5684ca4027054ba7de1d4c780a57005a8a6b4ad96f1e627306003c44&",
+    socials: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/amaury-richard-de-vesvrotte-1903801b7/",
+        icon: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+      }
+    ]
+  },
+  {
+    id: 5,
+    name: "Fathipoursasansara",
+    firstName: "Adelia",
+    age: 24,
+    specialty: "Développeur logiciel, mobile & IOT",
+    contributions: [
+      "Développeuse mobile",
+      "Création de la direction artistique",
+    ],
+    presentation: "Je suis passionnée d'informatique, manga et digital art.",
+    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1328108737780650075/IMG_3282.jpg?ex=67db32a6&is=67d9e126&hm=bd2b2e8bf09fcfc49829d9d2f68cf68fda49a70314023a07c560a431e782d41d&",
+    socials: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/adelia-fathipour-040872231",
+        icon: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+      }
+    ]
+  },
+  {
+    id: 6,
+    name: "Chollet",
+    firstName: "Gaëtan",
+    age: 22,
+    specialty: "Développeur web",
+    contributions: [
+      "Développeur web",
+      "Création de la direction artistique",
+      "Création des maquettes du site web"
+    ],
+    presentation: "Je suis passionné par le développement web et depuis peu par le pilotage de drone FPV dans le cadre de production vidéo.",
+    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1328108963534733486/DSC_0114.jpg?ex=67db32db&is=67d9e15b&hm=3a952b0f6f424de43e1727a7b16a8d14a64db68236765768973075004a40b4aa&",
+    socials: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/gaëtan-chollet-developpeur/",
+        icon: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+      },
+      {
+        platform: "GitHub",
+        url: "https://github.com/GaetanccgYnov",
+        icon: "M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.022A9.606 9.606 0 0112 6.82c.85.004 1.705.115 2.504.337 1.909-1.29 2.747-1.022 2.747-1.022.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+      },
+    ]
+  },
+  {
+    id: 7,
+    name: "Ribes",
+    firstName: "Thibault",
+    age: 24,
+    specialty: "Développeur web",
+    contributions: [
+      "Développeur web",
+      "Création de la direction artistique",
+      "Création des maquettes du site web"
+    ],
+    presentation: "Je suis passionné par l'informatique, le jeux vidéo, le jeu de rôle et les mangas.",
+    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1328109049224499322/PXL_20240714_195216309.PORTRAIT.jpg?ex=67db32f0&is=67d9e170&hm=c8f2d160d614a2ef17b66b7e8c63bbbe270c52950156792d7eeb2c3ff37d7bac&",
+    socials: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/thibault-ribes/",
+        icon: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+      },
+      {
+        platform: "GitHub",
+        url: "https://github.com/Zombizz97",
+        icon: "M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.022A9.606 9.606 0 0112 6.82c.85.004 1.705.115 2.504.337 1.909-1.29 2.747-1.022 2.747-1.022.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+      },
+    ]
+  },
 ]);
 </script>
 
@@ -81,51 +234,19 @@ const teamMembers = ref<TeamMember[]>([
   <div class="pt-20 min-h-screen bg-primary-600">
     <div class="max-w-7xl mx-auto px-4 py-12">
       <h1 class="text-4xl font-bold text-primary-100 mb-12 text-center">Notre Équipe</h1>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-for="member in teamMembers" :key="member.id" 
-             class="bg-primary-500/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-          <div class="relative h-64">
-            <img :src="member.photo" :alt="member.firstName" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-t from-primary-600 to-transparent opacity-60"></div>
-          </div>
-          
-          <div class="p-6">
-            <div class="mb-4">
-              <h3 class="text-2xl font-bold text-primary-100">
-                {{ member.firstName }} {{ member.name }}
-              </h3>
-              <p class="text-primary-200">{{ member.age }} ans</p>
-            </div>
-            
-            <div class="mb-4">
-              <h4 class="text-lg font-semibold text-primary-200 mb-2">Spécialité</h4>
-              <p class="text-primary-100">{{ member.specialty }}</p>
-            </div>
-            
-            <div class="mb-4">
-              <h4 class="text-lg font-semibold text-primary-200 mb-2">Contributions au projet</h4>
-              <ul class="list-disc list-inside text-primary-100 space-y-1">
-                <li v-for="(contribution, index) in member.contributions" :key="index">
-                  {{ contribution }}
-                </li>
-              </ul>
-            </div>
 
-            <div class="mt-6 flex justify-center space-x-4">
-              <a v-for="social in member.socials" 
-                 :key="social.platform"
-                 :href="social.url"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 class="text-primary-100 hover:text-primary-200 transition-colors">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path :d="social.icon"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
+      <h1 class="text-2xl font-bold text-primary-100 mb-12 text-center">Les chefs de projets</h1>
+      <div class="flex flex-wrap justify-center gap-8 mb-12">
+        <MemberCard v-for="member in projectManager"
+                    :key="member.id"
+                    :member="member" />
+      </div>
+
+      <h1 class="text-2xl font-bold text-primary-100 mb-12 text-center">L'équipe de développement</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <MemberCard v-for="member in iotTeam"
+                    :key="member.id"
+                    :member="member" />
       </div>
     </div>
   </div>
