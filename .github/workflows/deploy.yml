@@ -33,8 +33,6 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           source: "dist/*"  # Source : tout le contenu de 'dist'
           target: "/var/www/skylabs.fr"  # Cible : dossier de ton serveur web
-          rm: true  # Cette option supprime le fichier de destination avant de transférer
-          strip_components: 1  # Supprime le premier niveau du chemin source
 
       # - name: 🔄 Redémarrer le serveur web
       #   uses: appleboy/ssh-action@master
