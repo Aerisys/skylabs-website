@@ -51,24 +51,26 @@
 </template>
 
 <script setup lang="ts">
+import {CDN_URL} from "../config.ts";
+
 const galerie = [
   {
-    url: "https://cdn.discordapp.com/attachments/1351859383461478533/1351859440956997642/IMG_20250226_152948.jpg?ex=67dbe8b7&is=67da9737&hm=278d18732ea803a125b575ac2c78409650ce9a49afa2047744318ee0b708dc08&",
+    url: CDN_URL + "images/drone/joystick-test.jpg",
     alt: "Test du code des joysticks",
     description: "Test du code des joysticks de la radiocommande."
   },
   {
-    url: "https://cdn.discordapp.com/attachments/1351859383461478533/1351859626043375657/20250226_145633.jpg?ex=67dbe8e3&is=67da9763&hm=45ab98d4b1b820a831d7c20a68d49633d58d4876afa0c71b58f07421d630c14e&",
+    url: CDN_URL + "images/drone/drone-montage.jpg",
     alt: "Premier prototype du drone",
     description: "Premier montage complet du drone avec les hélices, les moteurs, la batterie et les cartes."
   },
   {
-    url: "https://media.discordapp.net/attachments/1296865465058201643/1329042407697940601/PXL_20250115_105830838.MP.jpg?ex=67db4c72&is=67d9faf2&hm=f41df4ae8b1b460161e169f672b5e45a75d506f444289cfdebcf3ffaa7fc43a1&=&format=webp&width=1066&height=800",
+    url: CDN_URL + "images/members/team.jpg",
     alt: "Une équipe de kassos",
     description: "Une équipe de kassos qui travaille sur le projet Skylab."
   },
   {
-    url: "https://cdn.discordapp.com/attachments/1344299782851530802/1351899118523383978/image.png?ex=67dc0daa&is=67dabc2a&hm=a04f914a18346db40f9503fd40d3a8222c91671d09ea5e281e556e3bd530d9ca&",
+    url: CDN_URL + "images/drone/conception-3D-1.png",
     alt: "Conception 3D",
     description: "Conception 3D du drone."
   }
