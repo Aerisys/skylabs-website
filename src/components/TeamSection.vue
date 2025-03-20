@@ -2,8 +2,6 @@
 import { ref } from 'vue';
 import {CDN_URL} from "../config.ts";
 
-console.log(CDN_URL);
-
 const teamMembers = ref([
   {
     id: 1,
