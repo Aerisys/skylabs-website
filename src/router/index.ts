@@ -5,6 +5,7 @@ import Mobile from '../views/Mobile.vue'
 import Documentation from '../views/Documentation.vue'
 import Management from '../views/Management.vue'
 import Team from '../views/Team.vue'
+import Cgu from '../views/Cgu.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: '/team',
       name: 'team',
       component: Team
+    },
+    {
+      path: '/cgu',
+      name: 'cgu',
+      component: Cgu
     }
   ],
   scrollBehavior(to, from, savedPosition) {

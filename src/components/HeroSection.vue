@@ -16,7 +16,7 @@ onMounted(() => {
   <div class="relative h-screen">
     <div class="absolute inset-0">
       <img
-        src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
+        src="https://cdn.skylabs.fr/medias/images/placeholder/drone-hero.avif"
         alt="Hero drone image"
         class="w-full h-full object-cover"
       />

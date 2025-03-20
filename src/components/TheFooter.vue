@@ -40,7 +40,7 @@
       </div>
 
       <div class="mt-8 pt-8 border-t border-primary-400">
-        <p class="text-center text-primary-100">&copy; 2024 Skylab. Tous droits réservés.</p>
+        <p class="text-center text-primary-100">&copy; 2024 Skylab. Tous droits réservés. <router-link to="/cgu" class="hover:text-primary-200 transition-colors">CGU</router-link></p>
       </div>
     </div>
   </footer>
