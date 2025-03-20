@@ -3,7 +3,7 @@ name: Deploy Vue.js to VPS
 on:
   push:
     branches:
-      - main  # Déclenche sur les pushs vers la branche principale
+      - master  # Déclenche sur les pushs vers la branche principale
 
 jobs:
   build-and-deploy:
