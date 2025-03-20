@@ -7,22 +7,14 @@ const sections = ref([
     id: 1,
     title: 'Le Projet',
     description: 'Découvrez notre projet et nos objectifs',
-<<<<<<< HEAD
     image: CDN_URL + 'images/placeholder/project.avif',
-=======
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
->>>>>>> afd82a4 (fill home & project & mobile + fix head)
     link: '/project'
   },
   {
     id: 2,
     title: 'App Mobile',
     description: 'Découvrez notre application mobile',
-<<<<<<< HEAD
     image: CDN_URL + 'images/placeholder/mobile.avif',
-=======
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
->>>>>>> afd82a4 (fill home & project & mobile + fix head)
     link: '/mobile'
   },
   {
