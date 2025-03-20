@@ -24,7 +24,7 @@ jobs:
       - name: 🏗️ Build du projet
         run: npm run build
 
-            - name: 🚀 Déployer sur le VPS
+      - name: 🚀 Déployer sur le VPS
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
