@@ -67,7 +67,11 @@
 </template>
 
 <script setup lang="ts">
+<<<<<<< HEAD
 import { CDN_URL } from "../config.ts";
+=======
+import {CDN_URL} from "../config.ts";
+>>>>>>> 9614308 (add cdn usage and create cgu)
 
 const galerie = [
   {
