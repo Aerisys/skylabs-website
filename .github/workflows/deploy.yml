@@ -31,10 +31,10 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
-          source: "dist/*"
-          target: "/var/www/skylabs.fr"
+          source: "dist/*"  # Source : tout le contenu de 'dist'
+          target: "/var/www/skylabs.fr"  # Cible : dossier de ton serveur web
 
-      # - name: 🔄 Redémarrer le serveur web (si nécessaire)
+      # - name: 🔄 Redémarrer le serveur web
       #   uses: appleboy/ssh-action@master
       #   with:
       #     host: ${{ secrets.VPS_HOST }}
@@ -42,4 +42,4 @@ jobs:
       #     key: ${{ secrets.VPS_SSH_KEY }}
       #     passphrase: ${{ secrets.SSH_PASSPHRASE }}
       #     script: |
-      #       sudo systemctl restart nginx
+      #       sudo systemctl restart nginx  # Redémarrer nginx (ajuste si tu utilises un autre serveur web)
