@@ -2,16 +2,14 @@
 import { ref } from 'vue';
 import {CDN_URL} from "../config.ts";
 
+console.log(CDN_URL);
+
 const teamMembers = ref([
   {
     id: 1,
     name: 'Barbet Sacha',
     role: 'Développeur Logiciel, Mobile, Iot & Chef de projet',
-<<<<<<< HEAD
-    photo: CDN_URL + 'images/members/sacha.jpeg'
-=======
-    photo: 'https://cdn.discordapp.com/attachments/1296865465058201643/1351857300159074304/1696676661920.jpeg?ex=67dbe6b8&is=67da9538&hm=692b56091767e70eadb067772652a39ed403caaf7449d73731ab64d9b4e1faba&'
->>>>>>> afd82a4 (fill home & project & mobile + fix head)
+    photo: CDN_URL + 'images/membres/sacha.jpeg'
   },
   {
     id: 2,
