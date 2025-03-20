@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import MemberCard from "../components/MemberCard.vue";
+import {CDN_URL} from "../config.ts";
 
 interface SocialMedia {
   platform: string;
@@ -32,7 +33,7 @@ const projectManager = ref<TeamMember[]>([
       "Développeur",
     ],
     presentation: "Je suis passioné d'informatique, d'électrique et d'escalade.",
-    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1351857300159074304/1696676661920.jpeg?ex=67dbe6b8&is=67da9538&hm=692b56091767e70eadb067772652a39ed403caaf7449d73731ab64d9b4e1faba&",
+    photo: CDN_URL + "images/members/sacha.jpeg",
     socials: [
       {
         platform: "LinkedIn",
@@ -52,7 +53,7 @@ const projectManager = ref<TeamMember[]>([
       "Développeur",
     ],
     presentation: "je suis passioné d'informatique, d'electronique et de sport.",
-    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1329002152202342450/PXL_20250115_0815407992.jpg?ex=67dbcfb4&is=67da7e34&hm=b7d5698d5222c589d5e2815c56c598b74603dc90051a5855f6a91d336059bd59&",
+    photo: CDN_URL + "images/members/gael.jpg",
     socials: [
       {
         platform: "LinkedIn",
@@ -75,7 +76,7 @@ const iotTeam = ref<TeamMember[]>([
       "contribution sur la manette du drone",
     ],
     presentation: "Développeur polyvalent, j’aime créer, optimiser et donner vie à des projets sur tous les fronts. J'aime bien les soirées aussi 🙂.",
-    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1351865447816888340/ynov-identite.jpg?ex=67dbee4f&is=67da9ccf&hm=d204566c2e2005563ee72d4d753221de5e67b5011f863416306192469df69645&",
+    photo: CDN_URL + "images/members/loan.jpg",
     socials: [
       {
         platform: "LinkedIn",
@@ -100,7 +101,7 @@ const iotTeam = ref<TeamMember[]>([
       "Développeur sur la manette",
     ],
     presentation: "Je suis passionné de sport, d'informatique et de bière 🍻.",
-    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1328118552724770888/Screenshot_20221222_211455.jpg?ex=67db3bca&is=67d9ea4a&hm=5c1437409248d2686a089837bf25d909d6237c4757ebc6bf394ed3ae1967adb9&",
+    photo: CDN_URL + "images/members/maxence.jpg",
     socials: [
       {
         platform: "LinkedIn",
@@ -126,7 +127,7 @@ const iotTeam = ref<TeamMember[]>([
       "ML"
     ],
     presentation: "Je suis passionné de mathématiques, de machine learning et de computer vision.",
-    photo: "https://cdn.discordapp.com/attachments/1344299782851530802/1351900442199719936/438799072_7327703210659174_8210856045386759170_n.jpg?ex=67dc0ee6&is=67dabd66&hm=506b666894a399f6a4e9b5da0ce6c0ba37f38a2c026ecff159a05d05c830df8a&",
+    photo: CDN_URL + "images/members/jamil.jpg",
     socials: [
       {
         platform: "LinkedIn",
@@ -146,7 +147,7 @@ const iotTeam = ref<TeamMember[]>([
       "Développeur des communications"
     ],
     presentation: "Je suis passionné d'informatique et de sport.",
-    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1328109818736803840/IMG_20240928_212634.jpg?ex=67db33a7&is=67d9e227&hm=9604008d5684ca4027054ba7de1d4c780a57005a8a6b4ad96f1e627306003c44&",
+    photo: CDN_URL + "images/members/amaury.jpg",
     socials: [
       {
         platform: "LinkedIn",
@@ -166,7 +167,7 @@ const iotTeam = ref<TeamMember[]>([
       "Création de la direction artistique",
     ],
     presentation: "Je suis passionnée d'informatique, manga et digital art.",
-    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1328108737780650075/IMG_3282.jpg?ex=67db32a6&is=67d9e126&hm=bd2b2e8bf09fcfc49829d9d2f68cf68fda49a70314023a07c560a431e782d41d&",
+    photo: CDN_URL + "images/members/adelia.jpg",
     socials: [
       {
         platform: "LinkedIn",
@@ -187,7 +188,7 @@ const iotTeam = ref<TeamMember[]>([
       "Création des maquettes du site web"
     ],
     presentation: "Je suis passionné par le développement web et depuis peu par le pilotage de drone FPV dans le cadre de production vidéo.",
-    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1328108963534733486/DSC_0114.jpg?ex=67db32db&is=67d9e15b&hm=3a952b0f6f424de43e1727a7b16a8d14a64db68236765768973075004a40b4aa&",
+    photo: CDN_URL + "images/members/gaetan.jpg",
     socials: [
       {
         platform: "LinkedIn",
@@ -213,7 +214,7 @@ const iotTeam = ref<TeamMember[]>([
       "Création des maquettes du site web"
     ],
     presentation: "Je suis passionné par l'informatique, le jeux vidéo, le jeu de rôle et les mangas.",
-    photo: "https://cdn.discordapp.com/attachments/1296865465058201643/1328109049224499322/PXL_20240714_195216309.PORTRAIT.jpg?ex=67db32f0&is=67d9e170&hm=c8f2d160d614a2ef17b66b7e8c63bbbe270c52950156792d7eeb2c3ff37d7bac&",
+    photo: CDN_URL + "images/members/thibault.jpg",
     socials: [
       {
         platform: "LinkedIn",
