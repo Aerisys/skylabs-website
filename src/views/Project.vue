@@ -8,7 +8,7 @@
         <div class="bg-primary-500/50 rounded-lg p-8">
           <h2 class="text-2xl font-semibold text-primary-200 mb-4">Notre Vision</h2>
           <p class="text-primary-100 mb-6">
-            Skylab est un projet qui consiste à concevoir et développer un drone modulable, ce drone vise un usage éducatif, de prototypage rapide et de recherche. Nous souhaitons obtenir un drone léger et personnalisable permettant d'explorer des fonctionnalités avancées.
+            Skylab est un projet qui consiste à concevoir et développer un drone modulable, ce drone vise un usage éducatif, de prototypage rapide et de recherche.
           </p>
 
           <h2 class="text-2xl font-semibold text-primary-200 mb-4">Objectifs</h2>
@@ -30,7 +30,6 @@
           </div>
         </div>
 
-<<<<<<< HEAD
         <!-- Galerie Vidéo -->
         <div class="bg-primary-500/50 rounded-lg p-8">
           <h2 class="text-2xl font-semibold text-primary-200 mb-6">Galerie Vidéo</h2>
@@ -48,30 +47,13 @@
             </div>
           </div>
         </div>
-=======
->>>>>>> afd82a4 (fill home & project & mobile + fix head)
-        <!-- Technologies -->
-        <div class="bg-primary-500/50 rounded-lg p-8">
-          <h2 class="text-2xl font-semibold text-primary-200 mb-4">Technologies</h2>
-          <div class="space-y-8">
-            <div v-for="(tech, index) in technologies" :key="index">
-              <h3 class="text-xl font-semibold text-primary-200 mb-2">{{ tech.categorie }}</h3>
-              <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div v-for="(outil, i) in tech.outils" :key="i" class="bg-primary-400 p-4 rounded-lg text-center text-primary-100">
-                  {{ outil }}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import {CDN_URL} from "../config.ts";
+import { CDN_URL } from "../config.ts";
 
 const galerie = [
   {
@@ -93,6 +75,17 @@ const galerie = [
     url: CDN_URL + "images/drone/conception-3D-1.png",
     alt: "Conception 3D",
     description: "Conception 3D du drone."
+  }
+];
+
+const videos = [
+  {
+    url: CDN_URL + "videos/test-sol.mp4",
+    description: "Premier test de vol du drone dans le labo."
+  },
+  {
+    url: CDN_URL + "videos/crash-1.mp4",
+    description: "Test des moteurs et de la réactivité du drone."
   }
 ];
 
@@ -118,7 +111,6 @@ const technologies = [
     outils: ["Python"]
   }
 ];
-<<<<<<< HEAD
 
 const downloadVideo = (url: string, filename: string) => {
   fetch(url)
@@ -133,6 +125,4 @@ const downloadVideo = (url: string, filename: string) => {
       })
       .catch(error => console.error("Erreur lors du téléchargement :", error));
 };
-=======
->>>>>>> afd82a4 (fill home & project & mobile + fix head)
 </script>
