@@ -20,7 +20,7 @@ const sections = ref([
     id: 3,
     title: 'Documentation',
     description: 'Accéder à la documentation complète du projet',
-    image: 'https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     link: '/docs'
   },
   {
