@@ -31,7 +31,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
-          source: "dist/dist/*"  # Source : tout le contenu de 'dist'
+          source: "*"  # Source : tout le contenu de 'dist'
           target: "/var/www/skylabs.fr"  # Cible : dossier de ton serveur web
 
       # - name: 🔄 Redémarrer le serveur web
