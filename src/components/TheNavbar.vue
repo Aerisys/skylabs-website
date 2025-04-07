@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
+import { useRoute } from 'vue-router';
 
 const isMenuOpen = ref(false);
 const isScrolled = ref(false);
+const route = useRoute();
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
@@ -37,11 +39,26 @@ onUnmounted(() => {
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8">
-          <router-link to="/project" class="text-primary-100 hover:text-primary-200 transition-colors">Le Projet</router-link>
-          <router-link to="/mobile" class="text-primary-100 hover:text-primary-200 transition-colors">App Mobile</router-link>
-          <router-link to="/docs" class="text-primary-100 hover:text-primary-200 transition-colors">Documentation</router-link>
-          <router-link to="/management" class="text-primary-100 hover:text-primary-200 transition-colors">Processus</router-link>
-          <router-link to="/team" class="text-primary-100 hover:text-primary-200 transition-colors">Équipe</router-link>
+          <router-link
+            to="/project"
+            :class="['text-primary-100 hover:text-primary-200 transition-colors', { 'font-bold text-primary-200': route.path === '/project' }]"
+          >Le Projet</router-link>
+          <router-link
+            to="/mobile"
+            :class="['text-primary-100 hover:text-primary-200 transition-colors', { 'font-bold text-primary-200': route.path === '/mobile' }]"
+          >App Mobile</router-link>
+          <router-link
+            to="/docs"
+            :class="['text-primary-100 hover:text-primary-200 transition-colors', { 'font-bold text-primary-200': route.path === '/docs' }]"
+          >Documentation</router-link>
+          <router-link
+            to="/management"
+            :class="['text-primary-100 hover:text-primary-200 transition-colors', { 'font-bold text-primary-200': route.path === '/management' }]"
+          >Processus</router-link>
+          <router-link
+            to="/team"
+            :class="['text-primary-100 hover:text-primary-200 transition-colors', { 'font-bold text-primary-200': route.path === '/team' }]"
+          >Équipe</router-link>
         </div>
 
         <!-- Mobile menu button -->
@@ -59,11 +76,31 @@ onUnmounted(() => {
     <!-- Mobile Menu -->
     <div v-if="isMenuOpen" class="md:hidden bg-primary-600/95 backdrop-blur-sm">
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <router-link to="/project" class="block px-3 py-2 text-primary-100 hover:text-primary-200">Le Projet</router-link>
-        <router-link to="/mobile" class="block px-3 py-2 text-primary-100 hover:text-primary-200">App Mobile</router-link>
-        <router-link to="/docs" class="block px-3 py-2 text-primary-100 hover:text-primary-200">Documentation</router-link>
-        <router-link to="/management" class="block px-3 py-2 text-primary-100 hover:text-primary-200">Processus</router-link>
-        <router-link to="/team" class="block px-3 py-2 text-primary-100 hover:text-primary-200">Équipe</router-link>
+        <router-link
+          to="/project"
+          @click.native="toggleMenu"
+          :class="['block px-3 py-2 text-primary-100 hover:text-primary-200', { 'font-bold text-primary-200': route.path === '/project' }]"
+        >Le Projet</router-link>
+        <router-link
+          to="/mobile"
+          @click.native="toggleMenu"
+          :class="['block px-3 py-2 text-primary-100 hover:text-primary-200', { 'font-bold text-primary-200': route.path === '/mobile' }]"
+        >App Mobile</router-link>
+        <router-link
+          to="/docs"
+          @click.native="toggleMenu"
+          :class="['block px-3 py-2 text-primary-100 hover:text-primary-200', { 'font-bold text-primary-200': route.path === '/docs' }]"
+        >Documentation</router-link>
+        <router-link
+          to="/management"
+          @click.native="toggleMenu"
+          :class="['block px-3 py-2 text-primary-100 hover:text-primary-200', { 'font-bold text-primary-200': route.path === '/management' }]"
+        >Processus</router-link>
+        <router-link
+          to="/team"
+          @click.native="toggleMenu"
+          :class="['block px-3 py-2 text-primary-100 hover:text-primary-200', { 'font-bold text-primary-200': route.path === '/team' }]"
+        >Équipe</router-link>
       </div>
     </div>
   </nav>

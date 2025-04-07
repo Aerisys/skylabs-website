@@ -26,7 +26,7 @@ const phases = ref([
   {
     id: "3",
     name: "Développement",
-    date: 'Janvier - Février 2025',
+    date: 'Janvier - Février - Mars 2025',
     description: [
       "Communication drone/radiocommande",
       "Maquettes web/mobile",
@@ -63,10 +63,10 @@ const scrollToPhase = (id: string) => {
 
       <h1 class="text-3xl font-bold text-primary-100 mb-8 text-center">Nos outils</h1>
 
-      <div class="flex justify-center gap-4 mb-12">
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
         <a href="https://www.notion.so/14edc498c54c8020a624f8b4cf8dfa5f?v=14edc498c54c81ec861b000ce6379e41"
            target="_blank"
-           class="flex items-center p-4 bg-primary-400 rounded-lg hover:bg-primary-300 transition-colors">
+           class="flex items-center p-4 bg-primary-400 rounded-lg hover:bg-primary-300 transition-colors w-full sm:w-auto">
           <img src="/notion_icon.ico"
                alt="Notion"
                class="w-8 h-8 mr-4" />
@@ -78,7 +78,7 @@ const scrollToPhase = (id: string) => {
 
         <a href="https://www.figma.com/files/team/1448694641696383267/project/312557658/Skylab?fuid=1290947341397342811"
            target="_blank"
-           class="flex items-center p-4 bg-primary-400 rounded-lg hover:bg-primary-300 transition-colors">
+           class="flex items-center p-4 bg-primary-400 rounded-lg hover:bg-primary-300 transition-colors w-full sm:w-auto">
           <img src="/figma_icon.png"
                alt="Figma"
                class="w-8 h-8 mr-4" />
@@ -90,7 +90,7 @@ const scrollToPhase = (id: string) => {
 
         <a href="https://drive.google.com/drive/folders/18OkLtMfItb_rkvuNjCPUt4aPyUgKu20N"
            target="_blank"
-           class="flex items-center p-4 bg-primary-400 rounded-lg hover:bg-primary-300 transition-colors">
+           class="flex items-center p-4 bg-primary-400 rounded-lg hover:bg-primary-300 transition-colors w-full sm:w-auto">
           <img src="/drive_icon.png"
                alt="Google Drive"
                class="w-8 h-8 mr-4" />
@@ -103,20 +103,20 @@ const scrollToPhase = (id: string) => {
 
       <h1 class="text-3xl font-bold text-primary-100 text-center">La timeline</h1>
 
-      <ol class="items-center sm:flex my-24">
+      <ol class="flex flex-col sm:flex-row sm:justify-between items-center my-24">
         <li v-for="(phase, index) in phases"
             :key="index"
-            class="relative w-full text-center">
+            class="relative w-full sm:flex-1 text-center mb-8 sm:mb-0">
           <div class="flex items-center justify-center">
-            <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">
               <span>{{ index + 1 }}</span>
             </div>
             <div class="hidden sm:flex w-full bg-gray-200 h-1 max-w-4xl"></div>
           </div>
           <div @click="scrollToPhase(phase.id)"
                class="cursor-pointer mt-3">
-            <h3 class="text-lg font-semibold text-primary-100">{{ phase.name }}</h3>
-            <time class="block text-sm text-primary-200">{{ phase.date }}</time>
+            <h3 class="text-lg sm:text-xl font-semibold text-primary-100">{{ phase.name }}</h3>
+            <time class="block text-sm sm:text-base text-primary-200">{{ phase.date }}</time>
           </div>
         </li>
       </ol>
