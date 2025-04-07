@@ -52,7 +52,7 @@ const projectManager = ref<TeamMember[]>([
       "Chef de projet",
       "Développeur",
     ],
-    presentation: "je suis passioné d'informatique, d'electronique et de sport.",
+    presentation: "Je suis passioné d'informatique, d'electronique et de sport.",
     photo: CDN_URL + "images/members/gael.jpg",
     socials: [
       {

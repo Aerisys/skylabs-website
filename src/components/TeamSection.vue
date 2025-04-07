@@ -64,9 +64,9 @@ const teamMembers = ref([
   <section class="py-16 bg-primary-100">
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-12 text-primary-600">Notre Équipe</h2>
-      
-      <div class="grid grid-cols-3 md:grid-cols-3 gap-6">
-        <div v-for="member in teamMembers" :key="member.id" 
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div v-for="member in teamMembers" :key="member.id"
              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img :src="member.photo" :alt="member.name" class="w-full h-80 object-cover" />
           <div class="p-4 text-center">
