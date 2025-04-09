@@ -46,7 +46,7 @@ const router = createRouter({
       component: Cgu
     }
   ],
-    scrollBehavior(_to, _from, savedPosition) {
+  scrollBehavior(_to, _from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
     } else {
