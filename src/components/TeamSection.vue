@@ -48,7 +48,7 @@ const teamMembers = ref([
   {
     id: 2,
     name: 'Ribes Thibault',
-    role: 'Developpeur Web',
+    role: 'Développeur Web',
     photo: CDN_URL + 'images/members/thibault.jpg'
   },
   {
