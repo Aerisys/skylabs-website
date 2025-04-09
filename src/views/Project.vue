@@ -49,18 +49,15 @@
         </div>
         <!-- Technologies -->
         <div class="bg-primary-500/50 rounded-lg p-8">
-          <h2 class="text-2xl font-semibold text-primary-200 mb-6">Galerie Vidéo</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div v-for="(video, index) in videos" :key="index" class="flex flex-col items-center">
-              <video controls preload="metadata" class="rounded-lg shadow-lg w-full h-64 object-cover">
-                <source :src="video.url" type="video/mp4">
-                Votre navigateur ne supporte pas la lecture de vidéos.
-              </video>
-              <p class="text-primary-100 mt-2 text-center">{{ video.description }}</p>
-              <button @click="downloadVideo(video.url, `video-${index + 1}.mp4`)"
-                      class="mt-2 bg-primary-400 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-primary-500 transition">
-                Télécharger la vidéo
-              </button>
+          <h2 class="text-2xl font-semibold text-primary-200 mb-4">Technologies</h2>
+          <div class="space-y-8">
+            <div v-for="(tech, index) in technologies" :key="index">
+              <h3 class="text-xl font-semibold text-primary-200 mb-2">{{ tech.categorie }}</h3>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div v-for="(outil, i) in tech.outils" :key="i" class="bg-primary-400 p-4 rounded-lg text-center text-primary-100">
+                  {{ outil }}
+                </div>
+              </div>
             </div>
           </div>
         </div>
