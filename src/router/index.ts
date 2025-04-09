@@ -46,11 +46,7 @@ const router = createRouter({
       component: Cgu
     }
   ],
-<<<<<<< HEAD
-  scrollBehavior(_to, _from, savedPosition) {
-=======
-  scrollBehavior(to, from, savedPosition) {
->>>>>>> afd82a4 (fill home & project & mobile + fix head)
+    scrollBehavior(_to, _from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
     } else {
