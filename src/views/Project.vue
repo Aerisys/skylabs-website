@@ -89,6 +89,11 @@ const galerie = [
     url: CDN_URL + "images/drone/conception-3D-1.png",
     alt: "Conception 3D",
     description: "Conception 3D du drone."
+  },
+  {
+    url: CDN_URL + "images/drone/prototype-radio.jpg",
+    alt: "Prototype de la radiocommande",
+    description: "Un premier montage 3D de la radiocommande."
   }
 ];
 
@@ -100,6 +105,10 @@ const videos = [
   {
     url: CDN_URL + "videos/crash-1.mp4",
     description: "Test des moteurs et de la réactivité du drone."
+  },
+  {
+    url: CDN_URL + "videos/detection-landing.mp4",
+    description: "Test de la détection de la zone d'attérissage."
   }
 ];
 
