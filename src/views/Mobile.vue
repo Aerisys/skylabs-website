@@ -35,6 +35,6 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {CDN_URL} from "../config.ts";
 </script>
