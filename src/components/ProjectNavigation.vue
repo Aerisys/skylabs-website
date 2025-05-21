@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import {CDN_URL} from "../config.ts";
+import GeneralCard from "./GeneralCard.vue";
 
 const sections = ref([
   {
@@ -42,15 +43,7 @@ const sections = ref([
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div v-for="section in sections" :key="section.id"
              class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer transform hover:scale-105 transition-all duration-300">
-          <img :src="section.image" :alt="section.title" class="w-full h-64 object-cover" />
-          <div class="absolute inset-0 bg-gradient-to-t from-primary-600 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-            <h3 class="text-2xl font-bold mb-2">{{ section.title }}</h3>
-            <p class="text-primary-100 mb-4">{{ section.description }}</p>
-            <router-link :to="section.link" class="bg-primary-200 text-white px-6 py-2 rounded-full hover:bg-primary-300 transition-colors">
-              En savoir plus
-            </router-link>
-          </div>
+          <general-card :section="section" />
         </div>
       </div>
     </div>
