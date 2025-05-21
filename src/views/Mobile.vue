@@ -17,8 +17,8 @@
         <div class="bg-primary-500/50 rounded-lg p-8">
           <h2 class="text-2xl font-semibold text-primary-200 mb-4">Captures d'écran</h2>
           <div class="grid grid-cols-2 gap-4">
-            <div class="bg-primary-400 aspect-[9/16] rounded-lg"></div>
-            <div class="bg-primary-400 aspect-[9/16] rounded-lg"></div>
+            <img :src="CDN_URL + 'images/drone/mobile-1.jpg'" alt="Capture d'écran 1" class="bg-primary-400 aspect-[9/16] rounded-lg object-cover" />
+            <img :src="CDN_URL + 'images/drone/mobile-2.jpg'" alt="Capture d'écran 2" class="bg-primary-400 aspect-[9/16] rounded-lg object-cover" />
           </div>
         </div>
       </div>
@@ -34,3 +34,7 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import {CDN_URL} from "../config.ts";
+</script>
