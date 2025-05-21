@@ -6,6 +6,8 @@ import Documentation from '../views/Documentation.vue'
 import Management from '../views/Management.vue'
 import Team from '../views/Team.vue'
 import Cgu from '../views/Cgu.vue'
+import NotFound from '../views/NotFound.vue'
+
 
 const router = createRouter({
   history: createWebHistory(),
@@ -44,6 +46,11 @@ const router = createRouter({
       path: '/cgu',
       name: 'cgu',
       component: Cgu
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: NotFound
     }
   ],
   scrollBehavior(_to, _from, savedPosition) {
