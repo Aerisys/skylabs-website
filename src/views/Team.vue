@@ -73,7 +73,7 @@ const iotTeam = ref<TeamMember[]>([
     specialty: "Développeur logiciel, mobile & IOT",
     contributions: [
       "Développeur mobile",
-      "contribution sur la manette du drone",
+      "Contribution sur la manette du drone",
     ],
     presentation: "Développeur polyvalent, j’aime créer, optimiser et donner vie à des projets sur tous les fronts. J'aime bien les soirées aussi 🙂.",
     photo: CDN_URL + "images/members/loan.jpg",
@@ -97,7 +97,7 @@ const iotTeam = ref<TeamMember[]>([
     age: 21,
     specialty: "Développeur logiciel, mobile & IOT",
     contributions: [
-      "Developpeur sur le drone",
+      "Développeur sur le drone",
       "Développeur sur la manette",
     ],
     presentation: "Je suis passionné de sport, d'informatique et de bière 🍻.",
@@ -124,7 +124,7 @@ const iotTeam = ref<TeamMember[]>([
     contributions: [
       "Computer Vision",
       "Traitement d'image",
-      "ML"
+      "Machine learning"
     ],
     presentation: "Je suis passionné de mathématiques, de machine learning et de computer vision.",
     photo: CDN_URL + "images/members/jamil.jpg",
