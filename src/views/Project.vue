@@ -109,6 +109,10 @@ const videos = [
   {
     url: CDN_URL + "videos/detection-landing.mp4",
     description: "Test de la détection de la zone d'attérissage."
+  },
+  {
+    url: CDN_URL + "videos/test-final.mp4",
+    description: "Test de vol du dernier prototype."
   }
 ];
 
