@@ -8,15 +8,15 @@
       <div class="bg-primary-500/50 rounded-lg p-8 text-primary-100 space-y-4">
         <section>
           <h2 class="text-2xl font-semibold text-primary-200 mb-2">1. Introduction</h2>
-          <p>Bienvenue sur notre site Skylab. En naviguant sur notre site, vous acceptez les présentes conditions générales d'utilisation.</p>
+          <p>Bienvenue sur notre site Aerisys. En naviguant sur notre site, vous acceptez les présentes conditions générales d'utilisation.</p>
         </section>
         <section>
           <h2 class="text-2xl font-semibold text-primary-200 mb-2">2. Utilisation du site</h2>
-          <p>Ce site a pour objectif de fournir des informations sur notre projet Skylab. Toute utilisation du contenu doit respecter nos droits de propriété intellectuelle.</p>
+          <p>Ce site a pour objectif de fournir des informations sur notre projet Aerisys. Toute utilisation du contenu doit respecter nos droits de propriété intellectuelle.</p>
         </section>
         <section>
           <h2 class="text-2xl font-semibold text-primary-200 mb-2">3. Propriété intellectuelle</h2>
-          <p>Les textes, images et éléments graphiques présents sur ce site sont la propriété exclusive de Skylab et ne peuvent être reproduits sans autorisation.</p>
+          <p>Les textes, images et éléments graphiques présents sur ce site sont la propriété exclusive de Aerisys et ne peuvent être reproduits sans autorisation.</p>
         </section>
         <section>
           <h2 class="text-2xl font-semibold text-primary-200 mb-2">4. Responsabilité</h2>
@@ -32,7 +32,7 @@
         </section>
         <section>
           <h2 class="text-2xl font-semibold text-primary-200 mb-2">7. Contact</h2>
-          <p>Pour toute question, veuillez nous contacter à <a href="mailto:skylab.ydays@proton.me" class="text-primary-200">skylab.ydays@proton.me</a>.</p>
+          <p>Pour toute question, veuillez nous contacter à <a href="mailto:contact@aerisys.fr" class="text-primary-200">contact@aerisys.fr</a>.</p>
         </section>
       </div>
     </div>
