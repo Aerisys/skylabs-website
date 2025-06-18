@@ -1,1 +1,1 @@
-export const CDN_URL = "https://cdn.skylabs.fr/medias/";
+export const CDN_URL = "https://cdn.aerisys.fr/medias/";
