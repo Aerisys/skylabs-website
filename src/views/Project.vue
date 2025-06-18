@@ -8,14 +8,14 @@
         <div class="bg-primary-500/50 rounded-lg p-8">
           <h2 class="text-2xl font-semibold text-primary-200 mb-4">Notre Vision</h2>
           <p class="text-primary-100 mb-6">
-            Skylab est un projet qui consiste à concevoir et développer un drone modulable, ce drone vise un usage éducatif, de prototypage rapide et de recherche. Nous souhaitons obtenir un drone léger et personnalisable permettant d'explorer des fonctionnalités avancées.
+            Aerisys est un projet qui consiste à concevoir et développer un drone modulable, ce drone vise un usage éducatif, de prototypage rapide et de recherche. Nous souhaitons obtenir un drone léger et personnalisable permettant d'explorer des fonctionnalités avancées.
           </p>
 
           <h2 class="text-2xl font-semibold text-primary-200 mb-4">Objectifs</h2>
           <ul class="list-disc list-inside text-primary-100 space-y-2 mb-6">
             <li>Corps du drone : Fabriquer une structure imprimée en 3D (support d'éléments et châssis) et une électronique gérée par des cartes ESP32.</li>
             <li>Radiocommande : Permet le pilotage manuel du drone, obtenir un retour de certaines informations télémétriques et servir de passerelle entre le drone et l’application mobile.</li>
-            <li>Application Mobile : Développer une application mobile permettant la configuration, la surveillance en temps réel, et le contrôle des drones et des radiocommandes du projet Skylab.</li>
+            <li>Application Mobile : Développer une application mobile permettant la configuration, la surveillance en temps réel, et le contrôle des drones et des radiocommandes du projet Aerisys.</li>
           </ul>
         </div>
 
@@ -83,7 +83,7 @@ const galerie = [
   {
     url: CDN_URL + "images/members/team.jpg",
     alt: "Notre équipe",
-    description: "Notre merveilleuse équipe qui travaille sur le projet Skylab."
+    description: "Notre merveilleuse équipe qui travaille sur le projet Aerisys."
   },
   {
     url: CDN_URL + "images/drone/conception-3D-1.png",
