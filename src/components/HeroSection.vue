@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import { gsap } from 'gsap';
+import {CDN_URL} from "../config.ts";
 
 onMounted(() => {
   gsap.from('.hero-content', {
@@ -10,13 +11,15 @@ onMounted(() => {
     ease: 'power2.out'
   });
 });
+
+const imageUrl = `${CDN_URL}images/placeholder/drone-hero.avif`;
 </script>
 
 <template>
   <div class="relative h-screen">
     <div class="absolute inset-0">
       <img
-        src="{{ CDN_URL }}images/placeholder/drone-hero.avif"
+        :src=imageUrl
         alt="Hero drone image"
         class="w-full h-full object-cover"
       />
