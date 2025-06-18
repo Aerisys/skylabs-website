@@ -32,7 +32,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           source: "dist/*"  # Source : tout le contenu de 'dist'
-          target: "/var/www/skylabs.fr"  # Cible : dossier de ton serveur web
+          target: "/var/www/aerisys.fr"  # Cible : dossier de ton serveur web
           strip_components: 1
 
       # - name: 🔄 Redémarrer le serveur web
